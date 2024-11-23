@@ -3,19 +3,47 @@
 @tailwind utilities;
 
 body {
-    font-family: var(--font-montserrat) !important;
-  }
+  font-family: var(--font-montserrat) !important;
+}
 
-  button {
-    font-family: var(--font-montserrat) !important;
-  }
-  p {
-    font-family: var(--font-montserrat) !important;
-  }
+button {
+  font-family: var(--font-montserrat) !important;
+}
+p {
+  font-family: var(--font-montserrat) !important;
+}
 
-  input {
-    font-family: var(--font-montserrat) !important;
-  }
-  textarea {
-    font-family: var(--font-montserrat) !important;
-  }
+input {
+  font-family: var(--font-montserrat) !important;
+}
+textarea {
+  font-family: var(--font-montserrat) !important;
+}
+
+.animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(100%); /* Initial position outside the viewport */
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.animation-container.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animation-container-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(-100%); /* Initial position outside the viewport */
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.animation-container-reverse.animate {
+  opacity: 1;
+  transform: translateX(0%);
+}
