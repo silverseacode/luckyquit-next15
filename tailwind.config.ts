@@ -11,6 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        gray1: '#55616C',
+      },
+      animation: {
+        'custom-animation': 'customAnimation 2s infinite ease alternate',
+      },
+      keyframes: {
+        customAnimation: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-10px)' },
+        },
       },
     },
   },
