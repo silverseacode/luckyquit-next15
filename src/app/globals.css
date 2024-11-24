@@ -47,3 +47,20 @@ textarea {
   opacity: 1;
   transform: translateX(0%);
 }
+
+.accordion-icon {
+  width: 10px;
+  height: 10px;
+  border: solid #888;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(-135deg);
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
