@@ -12,7 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         gray1: '#55616C',
-        gray2: "#6c7984ff"
+        gray2: "#6c7984ff",
+        gray3: "#55616C",
+        gray4: "#5C5C5C",
+        black1: "#292D30",
       },
       animation: {
         'custom-animation': 'customAnimation 2s infinite ease alternate',
