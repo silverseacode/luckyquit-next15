@@ -1,4 +1,5 @@
 import Coach from "./components/Coach";
+import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
@@ -41,6 +42,12 @@ export default function Home() {
           <FAQ />
         </section>
         </main>
+        <section id="contact-section" className="bg-gray-50 mt-12 py-20">
+        <h1 className="text-center py-[5px] px-0 text-[2.2rem] mb-12">
+            Contact Us
+          </h1>
+          <Contact/>
+        </section>
 
       <footer>
         <Footer />
