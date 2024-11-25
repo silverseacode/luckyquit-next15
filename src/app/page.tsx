@@ -28,7 +28,7 @@ export default function Home() {
           <Coach />
         </section>
         </main>
-        <section id="testimonials-section" className="bg-purple1 pb-[3rem]">
+        <section id="testimonials-section" className="bg-gradient-to-r from-purple-300 to-purple-500 pb-[3rem]">
           <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] pt-10 text-white">
             Testimonials
           </h1>
