@@ -82,7 +82,7 @@ export default function Contact() {
             <button
               type="submit"
               className={`${
-                isSent ? "bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-green-400" : "bg-purple1 hover:bg-purple-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-purple-400"
+                isSent ? "bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-green-400" : "bg-gradient-to-r from-purple-300 to-purple-500 hover:bg-purple-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-purple-400"
               } w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white  `}
             >
               {isSent ? "Successfully Sent!" : "Contact Us"}
