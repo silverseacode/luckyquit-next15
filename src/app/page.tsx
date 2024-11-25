@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Main from "./components/Home";
 import Navbar from "./components/Navbar";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -25,13 +26,22 @@ export default function Home() {
           </h1>
           <Coach />
         </section>
+        </main>
+        <section id="testimonials-section" className="bg-purple1 pb-[3rem]">
+          <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] pt-10 text-white">
+            Testimonials
+          </h1>
+          <Testimonials />
+        </section>
+        <main className="w-[90rem]  mx-auto">
         <section id="faq-section">
           <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px]">
             FAQ Quitters
           </h1>
           <FAQ />
         </section>
-      </main>
+        </main>
+
       <footer>
         <Footer />
       </footer>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google'
+import { Lato, Montserrat } from 'next/font/google'
 import "./globals.css";
 
-const montserrat = Montserrat({ subsets: ['latin'],weight: ["500", "700"], variable:"--font-montserrat" })
-
+const montserrat = Montserrat({ subsets: ['latin'], weight: ["500", "700"], variable: "--font-montserrat" });
+const lato = Lato({ subsets: ['latin'], weight: "400", variable: "--font-lato" });
 export const metadata: Metadata = {
   title: "Lucky Quit | Quit Smoking App",
   description: "Discover top-notch smoking cessation coaches and take control of your journey to quit smoking. Our app empowers you to track your cigarette consumption, monitor your health progress, and visualize the money saved. Start your smoke-free life today!",
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${montserrat.variable} ${lato.variable} antialiased`}
       >
         {children}
       </body>

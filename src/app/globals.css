@@ -20,6 +20,11 @@ textarea {
   font-family: var(--font-montserrat) !important;
 }
 
+.testimonial-font {
+  font-family: var(--font-lato) !important;
+
+}
+
 .animation-container {
   display: flex;
   align-items: center;

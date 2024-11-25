@@ -16,6 +16,7 @@ export default {
         gray3: "#55616C",
         gray4: "#5C5C5C",
         black1: "#292D30",
+        purple1: "#C765E7"
       },
       animation: {
         'custom-animation': 'customAnimation 2s infinite ease alternate',
