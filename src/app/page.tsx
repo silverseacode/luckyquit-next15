@@ -18,10 +18,12 @@ export default function Home() {
         <section>
           <Main />
         </section>
-        <section id="features-section">
+        </main>
+        <section id="features-section" className="dark:bg-black1 py-12">
           <h1 className="text-center py-[20px] px-0 text-[2.2rem] dark:text-white">Features</h1>
           <Features />
         </section>
+        <main className="w-[90rem]  mx-auto">
         <section id="coach-section">
           <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] dark:text-white">
             Are you a Coach?
@@ -29,10 +31,8 @@ export default function Home() {
           <Coach />
         </section>
         </main>
-        <section id="aboutus-section">
-        <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] pt-10 text-white">
-            About Us
-          </h1>
+        <section id="aboutus-section" className="mt-[10rem]">
+        
           <AboutUs />
         </section>
         <section id="testimonials-section" className="bg-gradient-to-r from-purple-300 to-purple-500 pb-[3rem]">
@@ -49,8 +49,8 @@ export default function Home() {
           <FAQ />
         </section>
         </main>
-        <section id="contact-section" className="bg-gray-50 mt-12 py-20">
-        <h1 className="text-center py-[5px] px-0 text-[2.2rem] mb-12">
+        <section id="contact-section" className="bg-white dark:bg-black1 mt-12 py-20">
+        <h1 className="text-center py-[5px] px-0 text-[2.2rem] mb-12 dark:text-white">
             Contact Us
           </h1>
           <Contact/>

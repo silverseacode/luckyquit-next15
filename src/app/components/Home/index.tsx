@@ -8,7 +8,7 @@ export default function Main() {
       <div className="flex flex-col w-1/2">
         <div className="mt-[100px] text-[3rem] font-bold">
           <h1 className="dark:text-white">Embrace your Lucky Quit</h1>
-          <h1 className="dark:text-white">Empowering you to live smoke-free!</h1>
+          <h1 className="dark:text-white">Empowering you to live <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">smoke-free!</span></h1>
         </div>
         <div className="text-gray1 dark:text-white">
           <p className="leading-relaxed">

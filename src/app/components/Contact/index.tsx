@@ -13,7 +13,7 @@ export default function Contact() {
     }
   };
   return (
-    <div className="mx-auto w-[40rem] h-[25rem] bg-white rounded-md shadow-md p-12">
+    <div className="mx-auto w-[40rem] h-[25rem] bg-gray-50 rounded-md shadow-md p-12">
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 gap-6">
           <div className="grid grid-cols-2 gap-4">
