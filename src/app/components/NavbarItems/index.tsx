@@ -14,10 +14,10 @@ export default function NavbarItems() {
   };
   return (
     <ul className="flex flex-row  w-full ml-12">
-      <li className="text-base " >Home</li>
-      <li className="text-base ml-12" onClick={() => scrollToSection("features-section")}>Features</li>
-      <li className="text-base ml-12" onClick={() => scrollToSection("coach-section")}>Are you a Coach?</li>
-      <li className="text-base ml-12" onClick={() => scrollToSection("faq-section")}>FAQ</li>
+      <li className="cursor-pointer transform transition-transform hover:scale-110 text-base dark:text-white" >Home</li>
+      <li className="cursor-pointer text-base ml-12 dark:text-white transform transition-transform hover:scale-110" onClick={() => scrollToSection("features-section")}>Features</li>
+      <li className="cursor-pointer text-base ml-12 dark:text-white transform transition-transform hover:scale-110" onClick={() => scrollToSection("coach-section")}>Are you a Coach?</li>
+      <li className="cursor-pointer text-base ml-12 dark:text-white transform transition-transform hover:scale-110" onClick={() => scrollToSection("faq-section")}>FAQ</li>
     </ul>
   );
 }

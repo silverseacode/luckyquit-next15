@@ -12,7 +12,7 @@ export default function Coach() {
                 height={250}
                 alt="icon money"
               />
-              <p className={"text-[1.3rem] text-center text-gray1"}>
+              <p className={"text-[1.3rem] text-center text-gray1 dark:text-white"}>
                 Share your expertise and provide personalized guidance to
                 empower others to break free from the habit and improve their
                 well-being. Make a positive impact and earn money by helping
@@ -27,7 +27,7 @@ export default function Coach() {
                 height={250}
                 alt="icon homework"
               />
-              <p className={"text-[1.3rem] text-center text-gray1"}>
+              <p className={"text-[1.3rem] text-center text-gray1 dark:text-white"}>
                 As a Quit Smoking Coach, you will offer customized modules and
                 exercises to individuals who are quitting smoking. These
                 resources will be specifically designed to address their unique
@@ -42,7 +42,7 @@ export default function Coach() {
                 height={200}
                 alt="icon videocall"
               />
-              <p className={"text-[1.3rem]  text-center text-gray1"}>
+              <p className={"text-[1.3rem]  text-center text-gray1 dark:text-white"}>
                 Facilitate direct and convenient communication between the Quit
                 Smoking Coach and individuals through video calls and chat. This
                 feature allows for real-time discussions, providing a personal

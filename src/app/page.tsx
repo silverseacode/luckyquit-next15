@@ -19,11 +19,11 @@ export default function Home() {
           <Main />
         </section>
         <section id="features-section">
-          <h1 className="text-center py-[20px] px-0 text-[2.2rem]">Features</h1>
+          <h1 className="text-center py-[20px] px-0 text-[2.2rem] dark:text-white">Features</h1>
           <Features />
         </section>
         <section id="coach-section">
-          <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px]">
+          <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] dark:text-white">
             Are you a Coach?
           </h1>
           <Coach />
@@ -43,7 +43,7 @@ export default function Home() {
         </section>
         <main className="w-[90rem]  mx-auto">
         <section id="faq-section">
-          <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px]">
+          <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] dark:text-white">
             FAQ Quitters
           </h1>
           <FAQ />

@@ -7,10 +7,10 @@ export default function Main() {
     <div className="h-screen w-full flex flex-row justify-between">
       <div className="flex flex-col w-1/2">
         <div className="mt-[100px] text-[3rem] font-bold">
-          <h1>Embrace your Lucky Quit</h1>
-          <h1>Empowering you to live smoke-free!</h1>
+          <h1 className="dark:text-white">Embrace your Lucky Quit</h1>
+          <h1 className="dark:text-white">Empowering you to live smoke-free!</h1>
         </div>
-        <div className="text-gray1">
+        <div className="text-gray1 dark:text-white">
           <p className="leading-relaxed">
             Unlock a healthier future and break free from smoking addiction with
             Lucky Quit – your comprehensive and personalized companion for a
@@ -23,7 +23,7 @@ export default function Main() {
             height={75}
             alt="appstore"
             src={"/appstore.png"}
-            className={"object-contain cursor-pointer mr-6"}
+            className={"object-contain cursor-pointer mr-6 dark:border-gray-200 dark:border dark:rounded-lg"}
           />
 
           <Image

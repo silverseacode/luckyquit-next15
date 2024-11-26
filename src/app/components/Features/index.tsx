@@ -44,8 +44,8 @@ export default function Features() {
     <div id="features">
       <div id="home" className="flex mt-0 flex-row justify-center">
         <div className="mr-[0px] w-[500px] text-[1.3rem]">
-          <h2 className="font-bold text-[2rem] mb-5">Home</h2>
-          <p className="leading-relaxed text-gray2">
+          <h2 className="font-bold text-[2rem] mb-5 dark:text-white">Home</h2>
+          <p className="leading-relaxed text-gray2 dark:text-white">
             In the &lsquo;Home&rsquo; section, you&apos;ll find a cigarette
             counter and a timer to track your smoke-free time. At the bottom,
             there&apos;s a timeline that logs your smoked cigarettes, including
@@ -85,8 +85,8 @@ export default function Features() {
           />
         </div>
         <div className="ml-[50px] w-[500px] text-[1.3rem] ">
-          <h2 className="font-bold mb-5 text-[2rem]">Health</h2>
-          <p className="leading-relaxed text-gray2">
+          <h2 className="font-bold mb-5 text-[2rem] dark:text-white">Health</h2>
+          <p className="leading-relaxed text-gray2 dark:text-white">
             In the &ldquo;Health&rdquo; section, you can monitor the percentage
             improvements in various aspects of your health as you continue to
             stay smoke-free. These aspects include blood pressure, blood oxygen
@@ -98,8 +98,8 @@ export default function Features() {
 
       <div id="money" className="flex flex-row justify-center mt-[250px]">
         <div className="mr-[0px] w-[500px] text-[1.3rem]">
-          <h2 className="font-bold text-[2rem] mb-5">Money</h2>
-          <p className="leading-relaxed text-gray2">
+          <h2 className="font-bold text-[2rem] mb-5 dark:text-white">Money</h2>
+          <p className="leading-relaxed text-gray2 dark:text-white">
             Here, you can visualize your weekly cigarette expenses through Line
             and Pie graphs. Additionally, you&apos;ll have the ability to track
             your total spending for the month and overall duration.
@@ -133,8 +133,8 @@ export default function Features() {
           />
         </div>
         <div className="mr-[0px] w-[500px] text-[1.3rem]">
-          <h2 className="font-bold text-[2rem] mb-5">Communities</h2>
-          <p className="leading-relaxed text-gray2">
+          <h2 className="font-bold text-[2rem] mb-5 dark:text-white">Communities</h2>
+          <p className="leading-relaxed text-gray2 dark:text-white">
             Discover a dynamic &ldquo;Communities&rdquo; section designed for
             both quitters and coaches. Connect with others who understand your
             journey, engage in private chats, and share your progress through

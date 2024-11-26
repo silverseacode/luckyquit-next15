@@ -4,7 +4,7 @@ export default function Footer() {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   return (
-    <div className={"mt-[100px] w-full bg-black1 h-[220px]"}>
+    <div className={"mt-[100px] w-full bg-black1 dark:bg-black h-[220px]"}>
       <div className={"flex justify-center items-center  w-full"}>
         <div className={"w-1/2 flex flex-col items-center justify-center pt-14"}>
           <h1 className="font-bold text-white text-[1.5rem]">Lucky Quit</h1>
