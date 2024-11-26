@@ -3,14 +3,19 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import NavbarItems from "../NavbarItems";
 import {  FaMoon } from 'react-icons/fa';
+import { useTheme } from "@/app/context/ThemeProvider";
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const {toggleTheme} = useTheme();
 
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
+      toggleTheme()
     } else {
       document.documentElement.classList.remove('dark');
+      toggleTheme()
     }
   }, [isDarkMode]);
 

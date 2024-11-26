@@ -7,17 +7,20 @@ import Footer from "./components/Footer";
 import Main from "./components/Home";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
+import { ThemeProvider } from "./context/ThemeProvider";
 
 export default function Home() {
   return (
     <>
       <main className="w-[90rem]  mx-auto">
+        <ThemeProvider>
         <header> 
           <Navbar />
         </header>
         <section>
           <Main />
         </section>
+        </ThemeProvider>
         </main>
         <section id="features-section" className="dark:bg-black1 py-12">
           <h1 className="text-center py-[20px] px-0 text-[2.2rem] dark:text-white">Features</h1>
