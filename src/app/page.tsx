@@ -12,7 +12,7 @@ import { ThemeProvider } from "./context/ThemeProvider";
 export default function Home() {
   return (
     <>
-      <main className="w-[90rem]  mx-auto">
+      <main className="w-full mx-auto">
         <ThemeProvider>
         <header> 
           <Navbar />
@@ -23,10 +23,10 @@ export default function Home() {
         </ThemeProvider>
         </main>
         <section id="features-section" className="dark:bg-black1 py-12">
-          <h1 className="text-center py-[20px] px-0 text-[2.2rem] dark:text-white">Features</h1>
+          <h1 className="text-center py-[20px] px-0 text-[1.5rem] md:text-[2.2rem] dark:text-white">Features</h1>
           <Features />
         </section>
-        <main className="w-[90rem]  mx-auto">
+        <main className="w-full  mx-auto">
         <section id="coach-section">
           <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] dark:text-white">
             Are you a Coach?
@@ -44,20 +44,20 @@ export default function Home() {
           </h1>
           <Testimonials />
         </section>
-        <main className="w-[90rem]  mx-auto">
-        <section id="faq-section">
+        <main className="w-full  mx-auto">
+        {/* <section id="faq-section">
           <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] dark:text-white">
             FAQ Quitters
           </h1>
           <FAQ />
-        </section>
+        </section> */}
         </main>
-        <section id="contact-section" className="bg-white dark:bg-black1 mt-12 py-20">
+        {/* <section id="contact-section" className="bg-white dark:bg-black1 mt-12 py-20">
         <h1 className="text-center py-[5px] px-0 text-[2.2rem] mb-12 dark:text-white">
             Contact Us
           </h1>
           <Contact/>
-        </section>
+        </section> */}
 
       <footer>
         <Footer />

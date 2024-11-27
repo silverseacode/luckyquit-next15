@@ -7,9 +7,9 @@ import { useTheme } from "@/app/context/ThemeProvider";
 export default function Main() {
   const { isDarkMode } = useTheme();
   return (
-    <div className="h-screen w-full flex flex-row justify-between">
-      <div className="flex flex-col w-1/2">
-        <div className="mt-[100px] text-[3rem] font-bold">
+    <div className="h-screen w-full flex flex-row justify-between px-4 md:px-0 -mb-[450px] md:m-0">
+      <div className="flex flex-col md:w-1/2">
+        <div className="mt-[100px] md:text-[3rem] text-[1.5rem] flex flex-col  font-bold w-full">
           <h1 className="dark:text-white">Embrace your Lucky Quit</h1>
           <h1 className="dark:text-white">
             Empowering you to live{" "}
@@ -32,7 +32,7 @@ export default function Main() {
             alt="appstore"
             src={"/appstore.png"}
             className={
-              "object-contain cursor-pointer mr-6 dark:border-gray-200 dark:border dark:rounded-lg"
+              "object-contain md:w-[230px] md:h-[75px] w-[140px] h-[80px] cursor-pointer mr-6 dark:border-gray-200 dark:border dark:rounded-lg"
             }
           />
 
@@ -41,11 +41,11 @@ export default function Main() {
             height={75}
             alt="playstore"
             src={"/playstore.png"}
-            className={"object-contain cursor-pointer"}
+            className={"object-contain cursor-pointer  md:w-[230px] md:h-[75px] w-[140px] h-[80px]"}
           />
         </div>
       </div>
-      <div className="relative">
+      <div className="relative hidden md:flex">
         {!isDarkMode ? (
           <Image
             src="/video-dark.png"
