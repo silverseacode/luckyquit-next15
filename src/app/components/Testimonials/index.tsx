@@ -41,7 +41,7 @@ export default function Testimonials() {
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="min-w-full p-4">
                 <div className="bg-white rounded-md shadow-md p-6 h-[250px]">
-                  <h3 className="testimonial-font text-[1.3rem]">{testimonial.text}</h3>
+                  <h3 className="testimonial-font md:text-[1.3rem]">{testimonial.text}</h3>
                   <div className="text-left mt-4">
                   <p className="text-gray-800 font-bold testimonial-font">- {testimonial.name}</p>
                 </div>

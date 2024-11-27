@@ -28,7 +28,7 @@ export default function Home() {
         </section>
         <main className="w-full  mx-auto">
         <section id="coach-section">
-          <h1 className="text-center py-[20px] px-0 text-[2.2rem] mt-[50px] mb-[50px] dark:text-white">
+          <h1 className="text-center  px-0 text-[1.5rem] md:text-[2.2rem] py-[20px] md:mt-[50px] md:mb-[50px] dark:text-white">
             Are you a Coach?
           </h1>
           <Coach />
