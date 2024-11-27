@@ -15,7 +15,7 @@ export default function AboutUs() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="relative z-10 flex items-center justify-center h-full flex-col">
-        <h1 className="text-white text-4xl font-bold pt-12">About Us</h1>
+        <h1 className="text-white md:text-4xl text-[1.5rem] font-bold pt-12">About Us</h1>
         <div className="flex justify-center items-center h-full">
           <div className="bg-white shadow-md rounded-lg p-6 text-center max-w-sm">
             <Image

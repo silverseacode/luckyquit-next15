@@ -3,7 +3,7 @@ import AccordionItem from '../AccordionItem'
 
 export default function FAQ() {
   return (
-    <div className="w-[600px] mx-auto">
+    <div className="w-full md:w-[600px] mx-auto">
         
           <AccordionItem
               title="How does the tracking feature work?"

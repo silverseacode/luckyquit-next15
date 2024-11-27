@@ -10,6 +10,12 @@ export default function Features() {
   const [isVisibleCommunities, setIsVisibleCommunities] = useState(false);
 
   useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsVisibleHome(true);
+    }
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const sectionOffsetHome = document.getElementById("home")?.offsetTop;
       if (scrollY > (sectionOffsetHome ?? 0) - 1000) {
@@ -42,9 +48,14 @@ export default function Features() {
 
   return (
     <div id="features">
-      <div id="home" className="flex flex-col-reverse mt-0 md:flex-row md:justify-center items-start px-4 md:px-0">
+      <div
+        id="home"
+        className="flex flex-col-reverse mt-0 md:flex-row md:justify-center items-start px-4 md:px-0"
+      >
         <div className="mr-[0px] w-[500px] md:text-[1.3rem]">
-          <h2 className="font-bold md:text-[2rem] text-[1.2rem] mb-5 dark:text-white text-left w-full">Home</h2>
+          <h2 className="font-bold md:text-[2rem] text-[1.2rem] mb-5 dark:text-white text-left w-full">
+            Home
+          </h2>
           <p className="leading-relaxed text-gray2 dark:text-white pr-[10rem] md:pr-0">
             In the &lsquo;Home&rsquo; section, you&apos;ll find a cigarette
             counter and a timer to track your smoke-free time. At the bottom,
@@ -56,9 +67,7 @@ export default function Features() {
           </p>
         </div>
         <div
-          className={`animation-container ${
-            isVisibleHome ? "animate" : ""
-          }`}
+          className={`animation-container ${isVisibleHome ? "animate" : ""}`}
         >
           <Image
             className="max-w-[300px] rounded-[24px] md:ml-20  mb-4 md:mt-0"
@@ -70,7 +79,10 @@ export default function Features() {
         </div>
       </div>
 
-      <div id="health" className="flex flex-col md:flex-row md:justify-center items-start mt-[5rem] md:mt-[250px] px-4 md:px-0">
+      <div
+        id="health"
+        className="flex flex-col md:flex-row md:justify-center items-start mt-[5rem] md:mt-[250px] px-4 md:px-0"
+      >
         <div
           className={`animation-container-reverse ${
             isVisibleHealth ? "animate" : ""
@@ -85,7 +97,9 @@ export default function Features() {
           />
         </div>
         <div className="md:ml-[50px] w-[500px] md:text-[1.3rem] ">
-          <h2 className="font-bold mb-5 text-[1.2rem] md:text-[2rem] dark:text-white">Health</h2>
+          <h2 className="font-bold mb-5 text-[1.2rem] md:text-[2rem] dark:text-white">
+            Health
+          </h2>
           <p className="leading-relaxed text-gray2 dark:text-white pr-[10rem] md:pr-0">
             In the &ldquo;Health&rdquo; section, you can monitor the percentage
             improvements in various aspects of your health as you continue to
@@ -96,10 +110,15 @@ export default function Features() {
         </div>
       </div>
 
-      <div id="money" className="flex flex-col-reverse md:mt-0 md:flex-row md:justify-center items-start px-4 md:px-0 mt-[5rem]">
+      <div
+        id="money"
+        className="flex flex-col-reverse md:mt-0 md:flex-row md:justify-center items-start px-4 md:px-0"
+      >
         <div className="mr-[0px] w-[500px] md:text-[1.3rem]">
-          <h2 className="font-bold md:text-[2rem] text-[1.2rem] mb-5 dark:text-white text-left w-full">Money</h2>
-          <p className="leading-relaxed text-gray2 dark:text-white pr-[10rem] md:pr-0">
+          <h2 className="font-bold md:text-[2rem] text-[1.2rem] mb-5 dark:text-white text-left w-full md:mt-[15rem]">
+            Money
+          </h2>
+          <p className="leading-relaxed text-gray2 dark:text-white pr-[10rem] md:pr-0 ">
             Here, you can visualize your weekly cigarette expenses through Line
             and Pie graphs. Additionally, you&apos;ll have the ability to track
             your total spending for the month and overall duration.
@@ -109,7 +128,7 @@ export default function Features() {
           className={`animation-container ${isVisibleMoney ? "animate" : ""}`}
         >
           <Image
-            className="max-w-[300px] rounded-[24px] md:ml-20 mb-4 md:mt-0"
+            className="max-w-[300px] rounded-[24px] md:ml-20 mb-4 md:mt-[15rem]"
             src={"/icon-money.png"}
             width={200}
             height={200}
@@ -118,7 +137,10 @@ export default function Features() {
         </div>
       </div>
 
-      <div id="communities" className="flex flex-col md:flex-row md:justify-center items-start mt-[5rem] md:mt-[250px] px-4 md:px-0">
+      <div
+        id="communities"
+        className="flex flex-col md:flex-row md:justify-center items-start mt-[5rem] md:mt-[250px] px-4 md:px-0"
+      >
         <div
           className={`animation-container-reverse ${
             isVisibleCommunities ? "animate" : ""
@@ -133,7 +155,9 @@ export default function Features() {
           />
         </div>
         <div className="md:ml-[50px] w-[500px] md:text-[1.3rem] ">
-          <h2 className="font-bold mb-5 text-[1.2rem] md:text-[2rem] dark:text-white">Commnunities</h2>
+          <h2 className="font-bold mb-5 text-[1.2rem] md:text-[2rem] dark:text-white">
+            Commnunities
+          </h2>
           <p className="leading-relaxed text-gray2 dark:text-white pr-[10rem] md:pr-0">
             Discover a dynamic &ldquo;Communities&rdquo; section designed for
             both quitters and coaches. Connect with others who understand your
