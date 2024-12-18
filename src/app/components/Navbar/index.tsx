@@ -20,7 +20,7 @@ export default function Navbar() {
   }, [isDarkMode]);
 
   return (
-    <nav className="flex flex-row items-center mt-5 hidden md:flex ">
+    <nav className="flex flex-row items-center mt-5 md:flex md:px-6 lg:px-0">
       <div className="cursor-pointer flex-row flex items-center">
         <Image width={60} height={60} alt="Lucky Quit Logo" src={isDarkMode ? "/logo-dark.png":"/logo.png"} />
         <span className={"w-[15rem]  font-bold text-[1.5rem] dark:text-white"}>Lucky Quit</span>
@@ -50,7 +50,7 @@ export default function Navbar() {
           <FaBars className="h-6 w-6" />
         </button>
       </div>
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div className="absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 flex flex-col items-center justify-center md:hidden">
           <button onClick={() => setIsMenuOpen(false)} className="absolute top-4 right-4 text-gray-800 dark:text-white">
             <FaBars className="h-6 w-6" />
@@ -69,7 +69,7 @@ export default function Navbar() {
             </span>
           </button>
         </div>
-      )}
+      )} */}
     </nav>
   );
 }
