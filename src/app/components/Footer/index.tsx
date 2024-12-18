@@ -12,18 +12,18 @@ export default function Footer() {
           <h1 className="font-bold text-white text-[1.5rem] mb-4">Lucky Quit</h1>
 
           <div className="flex flex-col justify-center items-center">
-            <div className="gap-x-3 flex cursor-pointer">
+            <div className="gap-x-3 flex cursor-pointer text-[0.9rem]">
               <span className="text-white">Contact</span>
               <span className="text-white">Community</span>
               <span className="text-white">Free Trial</span>
             </div>
-            <div className="gap-x-3 flex cursor-pointer">
+            <div className="gap-x-3 flex cursor-pointer text-[0.9rem]">
               <span className="text-white">Terms & Privacy</span>
               <span className="text-white">Accessibility</span>
               <span className="text-white">Jobs</span>
               <span className="text-white">Help</span>
             </div>
-            <div className="gap-x-3 flex cursor-pointer">
+            <div className="gap-x-3 flex cursor-pointer text-[0.9rem]">
               <span className="text-white">What&apos;s New</span>
               <span className="text-white">News & Press</span>
               <span className="text-white">Pricing </span>

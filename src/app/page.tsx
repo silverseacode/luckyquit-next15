@@ -12,7 +12,7 @@ import { ThemeProvider } from "./context/ThemeProvider";
 export default function Home() {
   return (
     <>
-      <main className="w-full lg:w-[96rem] mx-auto">
+      <main className="w-full xl:w-[86rem] mx-auto">
         <ThemeProvider>
           <header>
             <Navbar />
@@ -22,7 +22,7 @@ export default function Home() {
           </section>
         </ThemeProvider>
       </main>
-      <section id="features-section" className="dark:bg-black1 py-12">
+      <section id="features-section" className="dark:bg-black1 py-12 mt-[30rem] md:mt-[0rem]">
         <h1 className="text-center py-[20px] px-0 text-[1.5rem] md:text-[1.8rem] lg:text-[2.2rem] dark:text-white">
           Features
         </h1>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Coach() {
   return (
     <div className="flex justify-between flex-col lg:flex-row">
-      <div className="lg:w-1/3 flex flex-col md:flex-row md:items-center items-start px-4 lg:px-8">
+      <div className="xl:w-1/3 flex flex-col lg:flex-col md:flex-row md:items-center items-start px-4 lg:px-8">
         <Image
           className={"w-[180px] h-[180px]  rounded-[24px] object-cover mb-8"}
           src={"/icon-money-coach.png"}
@@ -18,7 +18,7 @@ export default function Coach() {
           lives.
         </p>
       </div>
-      <div className="lg:w-1/3  flex flex-col md:flex-row md:items-center px-4 lg:px-8 mt-12 :mt-0">
+      <div className="xl:w-1/3  flex flex-col lg:flex-col md:flex-row flex-row md:items-center px-4 lg:px-8 mt-12 :mt-0">
         <Image
           className={"w-[180px] h-[180px] rounded-[24px] object-cover mb-8"}
           src={"/icon-homework-coach.png"}
@@ -33,7 +33,7 @@ export default function Coach() {
           challenges, and motivations.
         </p>
       </div>
-      <div className="lg:w-1/3  flex flex-col md:flex-row md:items-center px-4 lg:px-8 mt-12 lg:mt-0">
+      <div className="xl:w-1/3  flex flex-col lg:flex-col md:flex-row  md:items-center px-4 lg:px-8 mt-12 lg:mt-0">
         <Image
           className={"w-[180px] h-[180px] rounded-[24px] object-cover mb-8"}
           src={"/videocall-icon-coach.png"}
