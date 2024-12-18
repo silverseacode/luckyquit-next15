@@ -67,7 +67,7 @@ export default function Features() {
           </p>
         </div>
         <div
-          className={`animation-container ${isVisibleHome ? "animate" : ""}`}
+          className={`md:animation-container ${isVisibleHome ? "md:animate" : ""}`}
         >
           <Image
             className="max-w-[300px] rounded-[24px] md:ml-20  mb-4 md:mt-0"
@@ -84,8 +84,8 @@ export default function Features() {
         className="flex flex-col md:flex-row md:justify-center items-start mt-[5rem] lg:mt-[250px] md:mt-[150px] px-4 lg:px-0"
       >
         <div
-          className={`animation-container-reverse ${
-            isVisibleHealth ? "animate" : ""
+          className={`md:animation-container-reverse ${
+            isVisibleHealth ? "md:animate" : ""
           }`}
         >
           <Image
@@ -125,7 +125,7 @@ export default function Features() {
           </p>
         </div>
         <div
-          className={`animation-container ${isVisibleMoney ? "animate" : ""}`}
+          className={`md:animation-container ${isVisibleMoney ? "md:animate" : ""}`}
         >
           <Image
             className="max-w-[300px] rounded-[24px] md:ml-20 mb-4 lg:mt-[15rem] md:mt-[150px]"
@@ -142,8 +142,8 @@ export default function Features() {
         className="flex flex-col md:flex-row md:justify-center items-start mt-[5rem] lg:mt-[250px] md:mt-[150px] px-4 lg:px-0"
       >
         <div
-          className={`animation-container-reverse ${
-            isVisibleCommunities ? "animate" : ""
+          className={`md:animation-container-reverse ${
+            isVisibleCommunities ? "md:animate" : ""
           }`}
         >
           <Image
