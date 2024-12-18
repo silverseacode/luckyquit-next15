@@ -1,12 +1,16 @@
 "use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Video from "../Video";
 import { useTheme } from "@/app/context/ThemeProvider";
 
 export default function Main() {
   const { isDarkMode } = useTheme();
+  const [isClient, setIsClient] = useState(false);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
     <div className="lg:h-screen w-full flex flex-row justify-between px-4 md:px-0  -mb-[450px] md:m-0 -mt-[4rem]">
       <div className="flex flex-col lg:w-1/2 md:w-2/2 md:px-6 lg:px-6 lg:pt-20 xl:px-0">
@@ -52,7 +56,7 @@ export default function Main() {
           <Video />
         )}
 
-        {!isDarkMode && window.innerWidth >= 1400 && (
+        {isClient && !isDarkMode && window.innerWidth >= 1400 && (
           <Image
             src="/video-dark.png"
             width={900}
