@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <div className="relative h-[35rem] overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        className="absolute inset-0 bg-cover bg-center lg:bg-fixed"
         style={{
           backgroundImage: "url('mardelplata.avif')",
           backgroundRepeat: "no-repeat",
